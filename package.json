@@ -1,0 +1,30 @@
+{
+  "name": "eachdir",
+  "description": "Run one or more commands in one or more dirs.",
+  "homepage": "https://github.com/Kikobeats/eachdir",
+  "version": "0.0.0",
+  "bin": {
+    "eachdir": "eachdir.sh"
+  },
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/eachdir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/eachdir/issues"
+  },
+  "keywords": [
+    "cli",
+    "garbage",
+    "git"
+  ],
+  "files": [
+    "eachdir.sh"
+  ],
+  "license": "MIT"
+}
