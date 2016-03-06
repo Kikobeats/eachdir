@@ -29,10 +29,10 @@ HELP
 return; fi
 
 # For underlining headers.
-local h1
-local h2
-h1="$(tput smul)"
-h2="$(tput rmul)"
+local underline
+local _underline
+underline="$(tput smul)"
+_underline="$(tput rmul)"
 
 # Store any dirs passed before -- in an array.
 local dashes d
@@ -60,7 +60,7 @@ for d in "${dirs[@]}"; do
   output="$( (cd "$d"; eval "$@") 2>&1 )"
   if [[ "$output" ]]; then
     # If the command had output, display a header and that output.
-    echo -e "${h1}${d}${h2}\n$output\n"
+    echo -e "${underline}${d}${_underline}\n$output\n"
   else
     # Otherwise push it onto an array for later display.
     nops=("${nops[@]}" "$d")
@@ -69,7 +69,7 @@ done
 
 # List any dirs that had no output.
 if [[ ${#nops[@]} -gt 0 ]]; then
-  echo "${h1}no output from${h2}"
+  echo "${underline}no output from${_underline}"
   for d in "${nops[@]}"; do echo "$d"; done
 fi
 }
