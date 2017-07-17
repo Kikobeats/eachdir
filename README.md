@@ -1,5 +1,7 @@
 # eachdir
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/eachdir.svg)](https://greenkeeper.io/)
+
 <h1 align="center">
   <img src="http://i.imgur.com/gBTP7Xp.png" alt="eachdir">
 </h1>
