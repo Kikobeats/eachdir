@@ -1,14 +1,14 @@
 {
   "name": "eachdir",
-  "description": "Run one or more commands in one or more dirs.",
+  "description": "Run one or more shell commands across multiple directories — useful for monorepos and batch git tasks.",
   "homepage": "https://github.com/Kikobeats/eachdir",
   "version": "1.0.1",
   "bin": {
     "eachdir": "eachdir.sh"
   },
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": {
@@ -19,10 +19,20 @@
     "url": "https://github.com/Kikobeats/eachdir/issues"
   },
   "keywords": [
+    "batch",
     "cli",
-    "garbage",
-    "git"
+    "command",
+    "cwd",
+    "directories",
+    "each",
+    "git",
+    "monorepo",
+    "parallel",
+    "shell"
   ],
+  "dependencies": {
+    "eachdir": "link:"
+  },
   "files": [
     "eachdir.sh"
   ],
